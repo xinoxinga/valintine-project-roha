@@ -114,9 +114,9 @@
         const mainBox = document.getElementById('mainBox');
         const music = document.getElementById('bgMusic');
 
-        // ASAP TRIGGER: Plays at 50% volume on first engagement
+        // ASAP TRIGGER: Plays at 15% volume on first engagement
         const startMusic = () => {
-            music.volume = 0.5; // Updated to 50%
+            music.volume = 0.15; // Updated to 15%
             music.play().catch(() => {
                 console.log("Autoplay blocked, waiting for more interaction.");
             });
@@ -150,4 +150,5 @@
         });
     </script>
 </body>
+
 </html>
